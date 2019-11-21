@@ -24,15 +24,6 @@ int main(void)
   testPin = 8;
   LabGPIO gpioTest3(testPort, testPin);
 
-  sjsu::cortex::InterruptController IntCont;
-  InterruptController::RegistrationInfo_t test = {
-    sjsu::lpc17xx::EINT3_IRQn, 
-    GpioInterruptCallback,
-    true,
-    1,
-  };
-  //Register Interrupt
-  IntCont.Register(test);
 
   while(true)
   {
