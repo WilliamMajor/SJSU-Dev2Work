@@ -107,7 +107,7 @@ enum IRQn
   EINT0_IRQn                    = 18,       /*!< External Interrupt 0 Interrupt                   */
   EINT1_IRQn                    = 19,       /*!< External Interrupt 1 Interrupt                   */
   EINT2_IRQn                    = 20,       /*!< External Interrupt 2 Interrupt                   */
-  EINT3_IRQn                    = 21,       /*!< External Interrupt 3 Interrupt                   */
+  EINT3_IRQn                    = 21,       /*!< External Interrupt 3 Interrupt shared with GPIO  */
   ADC_IRQn                      = 22,       /*!< A/D Converter Interrupt                          */
   BOD_IRQn                      = 23,       /*!< Brown-Out Detect Interrupt                       */
   USB_IRQn                      = 24,       /*!< USB Interrupt                                    */
@@ -678,7 +678,7 @@ typedef struct
        uint32_t RESERVED0[998];
   __O  uint32_t QEIIEC;
   __O  uint32_t QEIIES;
-  __I  uint32_t QEIINTSTAT;
+  __I  uint32_t QEIINTSTFAT;
   __I  uint32_t QEIIE;
   __O  uint32_t QEICLR;
   __O  uint32_t QEISET;

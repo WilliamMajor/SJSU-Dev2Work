@@ -1,0 +1,4 @@
+Memory region         Used Size  Region Size  %age Used
+           FLASH:       32240 B       512 KB      6.15%
+            SRAM:          0 GB        32 KB      0.00%
+        SRAM_AHB:         808 B        32 KB      2.47%
